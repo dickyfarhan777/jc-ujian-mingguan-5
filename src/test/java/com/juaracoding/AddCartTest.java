@@ -33,8 +33,6 @@ public class AddCartTest {
     @When("Admin click add cart product 1")
     public void admin_click_add_cart_product_1() {
         addCartPage.clickProduct1();
-       // Assert.assertEquals(addCartPage.getTxtProduct1(),"Sauce Labs Fleece Jacket");
-        //Assert.assertEquals(addCartPage.getAddCartProduct1(),"Add to cart");
         extentTest.log(LogStatus.PASS, "Admin click add cart product 1");
 
 
@@ -43,8 +41,6 @@ public class AddCartTest {
     @Then("Admin click add cart product 2")
     public void admin_click_add_cart_product_2() {
         addCartPage.clickProduct2();
-       // Assert.assertEquals(addCartPage.getTxtProduct2(),"Sauce Labs Bolt T-Shirt");
-        //Assert.assertEquals(addCartPage.getAddCartProduct2(),"Add to cart");
         extentTest.log(LogStatus.PASS, "Admin click add cart product 2");
 
     }
@@ -61,7 +57,6 @@ public class AddCartTest {
     @When("Admin click checkout button")
     public void admin_click_checkout_button(){
         addCartPage.clickCheckOut();
-
         extentTest.log(LogStatus.PASS,"Admin click checkout button");
 
     }
@@ -75,14 +70,7 @@ public class AddCartTest {
         extentTest.log(LogStatus.PASS,"Admin enter firstname and lastname and postalcode");
 
     }
-//    @And("Admin enter lastname")
-//    public void admin_enter_lastname(){
-//        addCartPage
-//    }
-//    @And("Admin enter postalcode")
-//    public void admin_enter_lastname(){
-//        addCartPage
-//    }
+
     @And("Admin click continue button")
     public void admin_click_continue_button(){
         addCartPage.clickBtnContinue();
@@ -99,8 +87,6 @@ public class AddCartTest {
         Assert.assertEquals(addCartPage.getTxtNameShipping(),"Free Pony Express Delivery!");
         Assert.assertEquals(addCartPage.getTxtPriceTotal(),"Price Total");
         Assert.assertEquals(addCartPage.getTxtTotalItem(),"Item total: $65.98");
-        //Assert.assertEquals(addCartPage.getTxtTax(),"Tax: $5.28");
-       //Assert.assertEquals(addCartPage.getTxtTotal(),"Total: $71.26");
         addCartPage.clickBtnFinish();
         extentTest.log(LogStatus.PASS,"Admin click finish button");
     }
@@ -108,5 +94,6 @@ public class AddCartTest {
     public void user_finish_checkout_product(){
         Assert.assertTrue(addCartPage.getTxtCheckoutComplete().contains("Checkout: Complete!"));
         Assert.assertTrue(addCartPage.getTxtThankForOrder().contains("Thank you for your order!"));
+        extentTest.log(LogStatus.PASS,"User finish checkout product");
     }
 }

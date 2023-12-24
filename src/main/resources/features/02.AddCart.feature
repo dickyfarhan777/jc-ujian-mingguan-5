@@ -9,8 +9,6 @@ Feature: Add cart
       Given Admin click cart button
       When Admin click checkout button
       And Admin enter firstname and lastname and postalcode
-#      And Admin enter lastname
-#      And Admin enter postalcode
       And Admin click continue button
       And Admin click finish button
       Then User finish checkout product

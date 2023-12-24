@@ -73,15 +73,6 @@ public class LoginPage {
     public String getTxtLoginPage(){
         return txtLoginPage.getText();
     }
-    public String getTxtUsername(){
-    return txtUsername.getText();
-    }
-    public String getTxtPassword(){
-    return txtPassword.getText();
-    }
-    public String getTxtLoginButton(){
-        return txtBtnLogin.getText();
-    }
     public String getTxtErrorUsernameOrPassword(){
         return txtErrorUsernameOrPassword.getText();
     }

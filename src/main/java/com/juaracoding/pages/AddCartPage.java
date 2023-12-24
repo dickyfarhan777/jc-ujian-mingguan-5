@@ -40,10 +40,7 @@ public class AddCartPage {
     private WebElement txtCheckoutOverview;
     @FindBy(xpath = "//button[@id='finish']")
     private WebElement btnFinish;
-//    @FindBy(xpath = "//div[@class='inventory_item_price'][normalize-space()='$15.99']")
-//    private WebElement txtPriceProduct1;
-//    @FindBy(xpath = "//div[@class='inventory_item_price'][normalize-space()='$49.99']")
-//    private WebElement txtPriceProduct2;
+
     @FindBy(xpath = "//div[normalize-space()='Payment Information']")
     private WebElement txtPaymentInfo;
     @FindBy(xpath = "//div[normalize-space()='SauceCard #31337']")
@@ -107,12 +104,7 @@ public class AddCartPage {
     public String getTxtCheckoutOverview(){
         return txtCheckoutOverview.getText();
     }
-//    public String getTxtPriceProduct1(){
-//        return txtPriceProduct1.getText();
-//    }
-//    public String getTxtPriceProduct2(){
-//        return txtPriceProduct2.getText();
-//    }
+
     public String getTxtYourInformation(){
         return txtYourInformation.getText();
     }

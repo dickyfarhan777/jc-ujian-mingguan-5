@@ -19,7 +19,7 @@ Feature: Admin Login
     Given Admin enter url web saucedemo
     When Admin enter wrong username
     And Admin enter password
-    And Admin click login button
+    And Admin click login button wrong username
     Then Admin login can not login redirect page dashboard
 #  #4
 #  Scenario: Admin Login invalid with wrong password
